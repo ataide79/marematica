@@ -1,6 +1,6 @@
 
-	player1Name = localStorage.getItem("player1Name");
-	player2Name = localStorage.getItem("player2Name");
+	player1Name = localStorage.getItem("jogador1");
+	player2Name = localStorage.getItem("jogador2");
 
 	player1Score = 0;
 	player2Score = 0;
@@ -40,7 +40,7 @@ function check()
 	getAnswer = document.getElementById("inputCheckBox").value;
 	answer = getAnswer.toLowerCase();
 	console.log("resposta em caixa baixa - " + answer);
-	if(answer == word)	
+	if(answer == resposta)	
 	{
 		if(answerTurn == "player1")
 		{
